@@ -16,7 +16,7 @@ const {
     generateWAMessageFromContent,
     prepareWAMessageMedia,
     proto
-} = require('baileys-x')
+} = require('baileys')
 const fs = require('fs')
 const P = require('pino')
 const FileType = require('file-type')
