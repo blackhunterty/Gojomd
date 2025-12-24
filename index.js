@@ -27,7 +27,7 @@ var config = require('./settings')
 
 // Call start.js
 
-const qrcode = require('qrcode-terminal')
+
 const NodeCache = require('node-cache')
 const { spawn } = require('child_process');
 spawn('python3', ['lib/telegram_file_api.py'], { stdio: 'inherit' });
