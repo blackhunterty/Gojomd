@@ -73,7 +73,7 @@ const ownerNumber = config.OWNER_NUMBER;
 //===================SESSION============================
 if (!fs.existsSync(__dirname + '/lib/session/creds.json')) {
     if (config.SESSION_ID) {
-      const sessdata = config.SESSION_ID.replace("𝐍𝐈𝐊𝐀-𝐌𝐃=" ");
+      const sessdata = config.SESSION_ID.replace("𝐍𝐈𝐊𝐀-𝐌𝐃= ");
       const filer = File.fromURL(`https://mega.nz/file/${sessdata}`);
       filer.download((err, data) => {
         if (err) throw err;
